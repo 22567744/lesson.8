@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap');
+
+@font-face{
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Book.woff2") format("woff2"),url("../fonts/CircularStd-Book.woff") format("woff");
+  font-display: swap; 
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Medium.woff2") format("woff2"),url("../fonts/CircularStd-Medium.woff") format("woff");
+  font-display: swap; 
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Bold.woff2") format("woff2"),url("../fonts/CircularStd-Bold.woff") format("woff");
+  font-display: swap; 
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Book.woff2") format("woff2"),url("../fonts/CircularStd-Book.woff") format("woff");
+  font-display: swap; 
+  font-weight: 900;
+  font-style: normal;
+  
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 auto;
+  font-family: 'Lato';
+  max-width: 810px;
+  line-height: 1;
+}
+
+.chapters_container h1{
+  font-weight: 900;
+  font-size: 30px;
+}
+.chapters_container h2{
+  font-weight: 700;
+  font-size: 20px;
+}
+.green {
+  color: darkgreen;
+  font-family:"CircularStd" ;
+}
+.green:hover{
+  background: blue;
+}
+
+.link1:focus{
+  background: darkmagenta;
+}
+.link2:active{
+  background: chartreuse;
+}
+.link3:visited{
+  background: #424551;
+}
+.list1 li:not(:last-child){
+  color: darkslategray;
+}
+.list3 li:nth-child(2){
+  color: red;
+}
+.list2 li:first-child{
+  color: darkorchid;
+} 
+.list4 li:nth-child(3n+1){
+  color: gold;
+}
+.list5 li:nth-child(3){
+color: aqua;
+}
+.list6 li:target{
+  color: coral;
+} 
+h4{
+  font-weight: 900;
+  font-size: 40px;
+
+}
+.green6{
+  color: green;
+}
+.bloc_before{
+  font-size: 15px;
+  font-weight: 600;
+  
+}
+p::before {
+color: rgb(221, 202, 34);
+  content:"$";
+}
+p::after{
+  color: maroon;
+  content: "%";
+}
+.about{
+  max-width: 815px;
+  margin-bottom: 115px;
+}
+
+.about h1 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 59.8px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.about p{
+line-height: 25.6px;
+margin-bottom: 49px;
+color: #424551;
+}
+
+.about h2{
+font-weight: 700;
+font-size: 28px;
+line-height: 42px;
+color: black;
+margin-bottom: 29px;
+}
+
+.remks li:not(:last-child){
+  margin-top: 4px;
+}
+
+.remks li{
+  line-height: 25.6px;
+}
+
+li{
+  list-style: none;
+}
+
+.remks li::before {
+  background: url("https://galchenko-anna.github.io/all-lessons/lesson8/img//check.svg") 0 7px no-repeat;
+  content: "";
+  min-height: 23px;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.course{
+  max-width: 600px;
+  margin-bottom: 115px;
+}
+
+.course h3{
+font-weight: 700;
+line-height: 24px;
+text-transform: uppercase;
+margin-bottom: 8px;
+color: black;
+}
+
+.course h4{
+  line-height: 59.8px;
+  font-size: 46px;
+  margin-bottom: 16px;
+  font-weight: 900;
+}
+
+.course p:first-of-type{
+  color: slategray;
+  margin-bottom: 32px;
+  font-size:20px;
+  line-height: 30px;
+}
+
+.kontint{
+  margin-bottom: 32px;
+}
+
+.kontint li:not(:last-child){
+  margin-bottom: 4px;
+}
+
+.kontint li{
+  color: #424551;
+  line-height: 25.6px;
+  font-weight: 700;
+}
+
+.kontint li:nth-child(1)::before{
+  background: url("https://galchenko-anna.github.io/all-lessons/lesson8/img/Star.svg") 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 8px;
+  content: "";
+}
+
+.kontint li:nth-child(2)::before{
+  background: url("https://galchenko-anna.github.io/all-lessons/lesson8/img//Vector.svg") 0 0 no-repeat;
+  margin-right: 8px;
+  content: "";
+  height: 16px;
+  display: inline-block;
+  width: 16px;
+}
+
+.kontint li:nth-child(3)::before{
+  background: url("https://galchenko-anna.github.io/all-lessons/lesson8/img/Vector-two.svg") 0 0 no-repeat;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  margin-right: 8px;
+  height: 16px;
+}
+
+.kontint + p{
+  margin-bottom: 40px;
+  color: #424551;
+  line-height: 25.6px;
+}
+
+.checks a:not(:last-child){
+  margin-right: 24px;
+}
+
+.checks a{
+  display: inline-block;
+}
+
+
